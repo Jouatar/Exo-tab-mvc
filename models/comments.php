@@ -7,3 +7,7 @@ require_once('database.php');
  * Rappel : Le modèle fait appel à la base de donner.
  * Il doit donc contenir les requêtes et s'occuper au maximum du traitement des données
  */
+function getComment($idPost){
+    $mypdo = initDatabse();
+    return $mypdo->query('Select * From comments where post-id='.$idPost.';');
+}
