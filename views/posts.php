@@ -9,7 +9,7 @@
         <th>Commentaire</th>
     </tr>
     <?php
-    foreach($posts as $row){
+    foreach($posts as $row){ 
         ?>
         <tr>
             <td><?php echo $row['id']?></td>
