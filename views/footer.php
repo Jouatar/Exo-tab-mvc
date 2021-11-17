@@ -1,1 +1,0 @@
-<h3>Welcome in the footer</h3>

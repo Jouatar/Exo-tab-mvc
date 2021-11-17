@@ -9,5 +9,6 @@ require_once('models/posts.php');
  */
 
  function getPostsListController(){
-     require('../views/header.php');
+    $posts = getPost();
+    require('views/posts.php');
  }

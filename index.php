@@ -4,7 +4,6 @@ require_once('controllers/posts.php');
 require_once('controllers/comments.php');
 
 $action = $_GET['action'] ?? 'posts-list';
-require('views/header.php');
 // Routing
 // -------
 require('views/header.php');
@@ -20,3 +19,5 @@ switch ($action) {
     default:
         echo '404 - Page Not Found';
 }
+
+require('views/footer.php');
