@@ -7,3 +7,7 @@ require_once('models/posts.php');
  * Rappel : Le controller fait appel au modèle et renvoie à la vue,
  * il n'est qu'un intermédiaire entre ces deux derniers.
  */
+
+ function getPostsListController(){
+     require('../views/header.php');
+ }

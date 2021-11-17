@@ -8,7 +8,7 @@ require_once('models/posts.php');
  * il n'est qu'un intermédiaire entre ces deux derniers.
  */
 
-function index(){
-    $data['comments']=getComment(3);
+function getCommentsOfPostController($idPost){
+    $data['comments']=getComment($idPost);
     
 }
