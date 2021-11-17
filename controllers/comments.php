@@ -9,6 +9,6 @@ require_once('models/posts.php');
  */
 
 function getCommentsOfPostController($idPost){
-    $data['comments']=getComment($idPost);
-    
+    $comments=getComment($idPost);
+    require('views/comments.php');
 }

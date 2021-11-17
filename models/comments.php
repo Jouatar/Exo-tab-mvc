@@ -9,5 +9,6 @@ require_once('database.php');
  */
 function getComment($idPost){
     $mypdo = initDatabse();
-    return $mypdo->query('Select * From comments where post-id='.$idPost.';');
+    $resul = $mypdo->query('Select * From comments where post_id='.$idPost.';');
+    return $resul;
 }
